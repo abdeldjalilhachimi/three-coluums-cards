@@ -1,0 +1,137 @@
+/* ============== Global Variables =================== */
+/* Typography */
+@import url(https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap);
+/* Colors  */
+/* Media Quiery */
+/* ============== Rest =================== */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  height: auto;
+}
+
+.bg-orang {
+  background-color: #e38826 !important;
+}
+
+.bg-soft-blue {
+  background-color: #006970;
+}
+
+.color-soft-blue {
+  color: #006970 !important;
+}
+
+.bg-dark-blue {
+  background-color: #004241;
+}
+
+.color-dark-blue {
+  color: #004241 !important;
+}
+
+.luxury {
+  border-radius: 0 15px 15px 0 !important;
+}
+
+.sedans {
+  border-radius: 15px 0 0 15px !important;
+}
+
+.suv {
+  border-radius: 0 !important;
+}
+
+/* Start  Colums */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+}
+
+.container .card__col {
+  border-radius: 15px;
+  max-width: 200px;
+  padding: 2rem;
+}
+
+.container .card__col .card__title h1 {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.container .card__col .card__pragraph {
+  margin-bottom: 3rem;
+}
+
+.container .card__col .card__pragraph p {
+  line-height: 1.7;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.container .card__col .card__btn a {
+  text-decoration: none;
+  color: #e38826;
+  display: inline-block;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 0.8rem 1rem;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .card__col .card__btn a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 950px) {
+  .container .luxury {
+    border-radius: 0 0 15px 15px !important;
+  }
+  .container .sedans {
+    border-radius: 15px 15px 0 0 !important;
+  }
+  .container .suv {
+    border-radius: 0 !important;
+  }
+  .container {
+    height: 220vh;
+  }
+}
+
+/* End  Colums   */
+/*# sourceMappingURL=main.css.map */
